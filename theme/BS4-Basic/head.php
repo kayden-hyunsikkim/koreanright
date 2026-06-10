@@ -161,16 +161,16 @@ $is_wing = ($tset['wing']) ? true : false;
 
 			<!-- PC 헤더 시작 { -->
 			<header id="header_pc" class="d-none d-md-block">
-				<div class="nt-container py-4 px-3 px-sm-4 px-xl-0">
+				<div class="nt-container py-4 px-1 px-sm-1 px-xl-0">
 					<div class="d-flex">
-						<div class="align-self-center">
+						<div class="align-self-center" >
 							<div class="header-logo">
 								<a href="<?php echo NT_HOME_URL ?>">
 									<img id="logo_img" src="<?php echo $tset['logo_img'] ?>" alt="<?php echo get_text($config['cf_title']) ?>">
 								</a>
 							</div>		  
 						</div>
-						<div class="align-self-center px-4">
+						<div class="align-self-center px-4" style="margin-top : 120px">
 							<div class="header-search">
 								<form name="tsearch" method="get" action="<?php echo G5_BBS_URL ?>/search.php" onsubmit="return tsearch_submit(this);" class="border-primary">
 									<input type="hidden" name="sfl" value="wr_subject||wr_content">
@@ -192,7 +192,7 @@ $is_wing = ($tset['wing']) ? true : false;
 
 
 
-							&nbsp;
+							
 						</div>
 					</div>
 				</div>

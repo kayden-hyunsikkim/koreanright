@@ -6,28 +6,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<?php echo na_widget('outlogin'); // 외부로그인 위젯 ?>
 </div>
 
+
 <!-- 위젯 시작 { -->
-<h3 class="h3 f-lg en">
-	<a href="<?php echo get_pretty_url('board'); ?>">
-		<span class="float-right more-plus"></span>
-		공지글
-	</a>
-</h3>
-<hr class="hr"/>
-<div class="mt-3 mb-4">
-	<?php echo na_widget('wr-list', 'notice', 'bo_list=board'); ?>
+<div class="mt-4 mb-4">
+	<?php echo na_widget('wr-gallery-slider', 'gallery-2', 'bo_table=gallery rows=8'); ?>
 </div>
 <!-- } 위젯 끝-->
 
 <!-- 위젯 시작 { -->
-<div class="px-3 px-sm-0 mb-4">
-	<?php echo na_widget('data-youtube', 'youtube-1'); ?>
-</div>
-
-<!-- } 위젯 끝-->
-
-<!-- 위젯 시작 { -->
-<h3 class="h3 f-lg en mb-1">
+<h3 class="h3 f-lg en mb-5" style="margin-top:35px;">
 	<a href="<?php echo G5_BBS_URL ?>/new.php?view=w">
 		<span class="float-right more-plus"></span>
 		최근글

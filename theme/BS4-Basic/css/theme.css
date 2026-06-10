@@ -161,10 +161,12 @@ h6,
 /********************************************************
 ■ PC 헤더(Header)
 ********************************************************/
+
+/*
 #header_pc .nt-container {
 	background: url('../img/header.jpg') no-repeat right bottom;
 }
-
+*/
 #header_pc .header-logo img {
 	max-width: 100%;
 }

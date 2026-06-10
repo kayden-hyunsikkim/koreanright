@@ -11,7 +11,7 @@ if($is_wing)
 		<!-- 메인 영역 -->
 		<div class="col-md-9 na-col">
 
-			<div class="mb-3 mb-sm-4">
+			<div class="px-3 px-sm-0 mt-3 mb-4">
 				<?php echo na_widget('wr-news-big', 'wr-news-big-1'); ?>
 			</div>
 
@@ -20,9 +20,9 @@ if($is_wing)
 
 					<!-- 위젯 시작 { -->
 					<h3 class="h3 f-lg en">
-						<a href="<?php echo G5_BBS_URL ?>/group.php?gr_id=free">
+						<a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=qa">
 							<span class="float-right more-plus"></span>
-							주요집회일정
+							주요 집회 일정
 						</a>
 					</h3>
 					<hr class="hr"/>
@@ -36,7 +36,7 @@ if($is_wing)
 
 					<!-- 위젯 시작 { -->
 					<h3 class="h3 f-lg en">
-						<a href="<?php echo get_pretty_url('board'); ?>">
+						<a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=free">
 							<span class="float-right more-plus"></span>	
 							시사/정치 뉴스
 						</a>
@@ -52,9 +52,9 @@ if($is_wing)
 
 					<!-- 위젯 시작 { -->
 					<h3 class="h3 f-lg en">
-						<a href="<?php echo get_pretty_url('board'); ?>">
+						<a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=global">
 							<span class="float-right more-plus"></span>
-							자유게시판
+							글로벌 우파 근황
 						</a>
 					</h3>
 					<hr class="hr"/>
@@ -68,76 +68,14 @@ if($is_wing)
 
 			<!-- 위젯 시작 { -->
 			<h3 class="h3 f-lg en">
-				<a href="<?php echo get_pretty_url('board'); ?>">
+				<a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=gallery">
 					<span class="float-right more-plus"></span>
 					갤러리
 				</a>
 			</h3>
 			<hr class="hr"/>
-			<div class="px-3 px-sm-0 my-3">
-				<?php echo na_widget('wr-gallery', 'gallery-1', 'bo_list=board rows=8'); ?>
-			</div>
-			<!-- } 위젯 끝-->
-
-
-			<div class="row na-row">
-				<div class="col-md-4 na-col">
-
-					<!-- 위젯 시작 { -->
-					<h3 class="h3 f-lg en">
-						<a href="<?php echo get_pretty_url('board'); ?>">
-							<span class="float-right more-plus"></span>
-							게시판
-						</a>
-					</h3>
-					<hr class="hr"/>
-					<div class="mt-3 mb-4">
-						<?php echo na_widget('wr-list', 'blist-1', 'bo_list=board'); ?>
-					</div>
-					<!-- } 위젯 끝-->
-
-				</div>
-				<div class="col-md-4 na-col">
-
-					<!-- 위젯 시작 { -->
-					<h3 class="h3 f-lg en">
-						<a href="<?php echo get_pretty_url('board'); ?>">
-							<span class="float-right more-plus"></span>
-							게시판
-						</a>
-					</h3>
-					<hr class="hr"/>
-					<div class="mt-3 mb-4">
-						<?php echo na_widget('wr-list', 'blist-2', 'bo_list=board'); ?>
-					</div>
-					<!-- } 위젯 끝-->
-
-				</div>
-				<div class="col-md-4 na-col">
-
-					<!-- 위젯 시작 { -->
-					<h3 class="h3 f-lg en">
-						<a href="<?php echo get_pretty_url('board'); ?>">
-							<span class="float-right more-plus"></span>
-							게시판
-						</a>
-					</h3>
-					<hr class="hr"/>
-					<div class="mt-3 mb-4">
-						<?php echo na_widget('wr-list', 'blist-3', 'bo_list=board'); ?>
-					</div>
-					<!-- } 위젯 끝-->
-
-				</div>
-			</div>
-
-			<!-- 위젯 시작 { -->
-			<h3 class="h3 f-lg en">
-				배너
-			</h3>
-			<hr class="hr"/>
 			<div class="px-3 px-sm-0 mt-3 mb-4">
-				<?php echo na_widget('data-slider', 'banner-1'); ?>
+				<?php echo na_widget('wr-gallery-slider', 'gallery-1', 'bo_table=gallery rows=8'); ?>
 			</div>
 			<!-- } 위젯 끝-->
 
