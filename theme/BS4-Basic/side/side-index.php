@@ -7,11 +7,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 </div>
 
 
-<!-- 위젯 시작 { -->
+<!-- 위젯 시작{ -->
 <div class="mt-4 mb-4">
 	<?php echo na_widget('wr-gallery-slider', 'gallery-2', 'bo_table=gallery rows=8'); ?>
 </div>
 <!-- } 위젯 끝-->
+
 
 <!-- 위젯 시작 { -->
 <h3 class="h3 f-lg en mb-5" style="margin-top:35px;">
