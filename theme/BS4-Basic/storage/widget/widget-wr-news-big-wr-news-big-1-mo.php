@@ -1,0 +1,26 @@
+<?php
+if (!defined('_GNUBOARD_')) exit;
+$data=array (
+  'cache' => '',
+  'bo_new' => '',
+  'new' => '',
+  'target' => '',
+  'bo_name' => '',
+  'c_color' => '',
+  'speed' => '',
+  'round' => '',
+  'thumb_w' => '',
+  'thumb_h' => '',
+  'thumb_d' => '',
+  'gr_list' => '',
+  'bo_list' => 'youtube',
+  'ca_list' => '',
+  'mb_list' => '',
+  'subject_line' => '1',
+  'wcut' => '80',
+  'rows' => '',
+  'page' => '',
+  'sort' => '',
+  'term' => '',
+  'dayterm' => '',
+);

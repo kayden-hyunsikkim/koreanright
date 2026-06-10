@@ -12,7 +12,7 @@ if($is_wing)
 		<div class="col-md-9 na-col">
 
 			<div class="mb-3 mb-sm-4">
-				<?php echo na_widget('data-carousel', 'title-1', 'xl=27%', 'auto=0'); //타이틀 ?>
+				<?php echo na_widget('wr-news-big', 'wr-news-big-1'); ?>
 			</div>
 
 			<div class="row na-row">
@@ -20,9 +20,9 @@ if($is_wing)
 
 					<!-- 위젯 시작 { -->
 					<h3 class="h3 f-lg en">
-						<a href="<?php echo get_pretty_url('board'); ?>">
+						<a href="<?php echo G5_BBS_URL ?>/group.php?gr_id=free">
 							<span class="float-right more-plus"></span>
-							게시판
+							주요집회일정
 						</a>
 					</h3>
 					<hr class="hr"/>
@@ -38,7 +38,7 @@ if($is_wing)
 					<h3 class="h3 f-lg en">
 						<a href="<?php echo get_pretty_url('board'); ?>">
 							<span class="float-right more-plus"></span>	
-							게시판
+							시사/정치 뉴스
 						</a>
 					</h3>
 					<hr class="hr"/>
@@ -54,7 +54,7 @@ if($is_wing)
 					<h3 class="h3 f-lg en">
 						<a href="<?php echo get_pretty_url('board'); ?>">
 							<span class="float-right more-plus"></span>
-							게시판
+							자유게시판
 						</a>
 					</h3>
 					<hr class="hr"/>
