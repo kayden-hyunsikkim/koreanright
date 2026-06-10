@@ -186,19 +186,21 @@ $is_wing = ($tset['wing']) ? true : false;
 									<?php echo na_widget('data-keyword', 'popular', 'q=아미나,나리야,플러그인,그누보드5.4,부트스트랩4,테마,스킨,위젯,애드온'); ?>
 								</div>
 							</div>	
+						<?php if (!G5_IS_MOBILE) { // 💻 모바일이 "아닐 때만" PC용 위젯 출력 ?>	
 							<div class="gtranslate_wrapper" style="margin-left :4px"></div>
 								<script>window.gtranslateSettings = {"default_language":"ko","native_language_names":true,"languages":["ko","en","ja","zh-TW","th"],"wrapper_selector":".gtranslate_wrapper","flag_size":56,"alt_flags":{"en":"usa"}}</script>
 								<script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
 								<!-- 💡 여기에 국기 사이 간격을 조절하는 스타일을 추가했습니다 -->
-<style>
-.gtranslate_wrapper a {
-	margin-top: 20px !important;  /* ◀ 위쪽에 15px만큼 공백을 만듭니다 */
-    margin-left: 10px !important; /* ◀ 국기 왼쪽(사이사이)에 10px만큼 공백을 만듭니다 */
-    margin-right: 10px !important;/* ◀ 국기 오른쪽(사이사이)에 10px만큼 공백을 만듭니다 */
-    display: inline-block !important;
-}
-</style>
+								<style>
+								.gtranslate_wrapper a {
+									margin-top: 20px !important;  /* ◀ 위쪽에 15px만큼 공백을 만듭니다 */
+									margin-left: 10px !important; /* ◀ 국기 왼쪽(사이사이)에 10px만큼 공백을 만듭니다 */
+									margin-right: 10px !important;/* ◀ 국기 오른쪽(사이사이)에 10px만큼 공백을 만듭니다 */
+									display: inline-block !important;
+								}
+								</style>
 							<div class="align-self-center ml-auto">
+						<?php } ?>
 							<!-- 배너 등 우측 영역 컨텐츠 -->
 
 
@@ -246,6 +248,26 @@ $is_wing = ($tset['wing']) ? true : false;
 							</form>
 						</div>
 					</div>
+				<!-- 모바일시 통역기능 자리   -->
+
+				<?php if (G5_IS_MOBILE) { // 💻 모바일이 "아닐 때만" PC용 위젯 출력 ?>	
+							<div class="gtranslate_wrapper" style="display: block !important; margin: 0 auto !important; text-align: center !important;"></div>
+								<script>window.gtranslateSettings = {"default_language":"ko","native_language_names":true,"languages":["ko","en","ja","zh-TW","th"],"wrapper_selector":".gtranslate_wrapper","flag_size":90,"alt_flags":{"en":"usa"}}</script>
+								<script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+								<!-- 💡 여기에 국기 사이 간격을 조절하는 스타일을 추가했습니다 -->
+								<style>
+								.gtranslate_wrapper a {
+									margin-top: 20px !important;  /* ◀ 위쪽에 15px만큼 공백을 만듭니다 */
+									margin-left: 20px !important; /* ◀ 국기 왼쪽(사이사이)에 10px만큼 공백을 만듭니다 */
+									margin-right: 20px !important;/* ◀ 국기 오른쪽(사이사이)에 10px만큼 공백을 만듭니다 */
+									margin-bottom: 20px !important;
+									display: inline-block !important;
+								}
+								</style>
+							<div class="align-self-center ml-auto">
+				<?php } ?>
+
+
 				</header>
 				<!-- } 모바일 헤더 끝 -->
 
