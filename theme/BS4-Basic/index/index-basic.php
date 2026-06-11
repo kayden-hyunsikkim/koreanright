@@ -11,6 +11,13 @@ if($is_wing)
 		<!-- 메인 영역 -->
 		<div class="col-md-9 na-col">
 
+			<h3 class="h3 f-lg en" style="font-size: 28px !important;">
+						<a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=youtube">
+							<span class="float-right more-plus"></span>
+							우파튜브
+						</a>
+			</h3>
+			<hr class="hr"/>
 			<div class="px-3 px-sm-0 mt-3 mb-4">
 				<?php echo na_widget('wr-news-big', 'wr-news-big-1'); ?>
 			</div>
